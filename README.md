@@ -5,6 +5,7 @@ Arsivleyici archives requests made on some procedural pages of [Turkish Wikipedi
 
 ## Developers
 * [Evrifaessa](https://tr.wikipedia.org/wiki/User:Evrifaessa)
+* [Mavrikant](https://tr.wikipedia.org/wiki/User:Mavrikant)
 
 ## License
 * This project is licensed under the terms of the [MIT License](https://choosealicense.com/licenses/mit/)
