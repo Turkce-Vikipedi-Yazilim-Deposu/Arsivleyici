@@ -90,7 +90,7 @@ while 1:
 
                 if hasBeenArchived == False and hasBeenPreArchived == False:
                     append = '\n' + '{{Vikipedi:Silinmeye aday sayfalar/' + page + '}}'
-                    archiveSummary = 'Arşiv sayfalarında bulunmayan + '[[Vikipedi:Silinmeye_aday_sayfalar/' + page + '|SAS alt sayfası]] arşivlere ekleniyor - ' + summary_ek
+                    archiveSummary = 'Arşiv sayfalarında bulunmayan [[Vikipedi:Silinmeye_aday_sayfalar/' + page + '|SAS alt sayfası]] arşivlere ekleniyor - ' + summary_ek
                     mavri.appendtext_on_page(wiki, archivePage.decode('UTF-8'), append, archiveSummary, xx)
                     print(page + ' arşiv sayfasına eklendi.')
 
