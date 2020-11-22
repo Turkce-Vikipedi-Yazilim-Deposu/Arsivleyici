@@ -98,7 +98,7 @@ while 1:
                     if resolved and youngestDiff.total_seconds() >= 3600:
                         summary = '[[Vikipedi:Silinmeye_aday_sayfalar/' + page + '|Sonuçlandırılan SAS]] arşivleniyor - ' + summary_ek
                         print(page + " SAS sayfasından kaldırılıyor.")
-                        newContent = content.replace("{{Vikipedi:Silinmeye aday sayfalar/" + page + "}}", "")
+                        newContent = content.replace("{{Vikipedi:Silinmeye aday sayfalar/" + page + "}}\n", "")
                         mavri.change_page(wiki, title, newContent, summary, xx)
                 else:
                     print(page + ' sabitlenmiş.')
