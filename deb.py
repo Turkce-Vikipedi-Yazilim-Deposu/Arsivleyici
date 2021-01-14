@@ -82,7 +82,7 @@ while 1:
                 if resolved:
                     if diff.total_seconds() > 60 * 60 * 72 and youngestDiff.total_seconds() >= 60 * 60 * 6:
                         if pinned == False:
-                            summary = 'Devriyelik başvurusu sonuçladırılmış - ' + summary_ek
+                            summary = 'Devriyelik başvurusu sonuçlandırılmış - ' + summary_ek
                             archiveSummary = 'Sonuçlandırılan devriyelik başvurusu arşivleniyor - ' + summary_ek
                             mavri.section_clear(wiki, title, section, summary, xx)
                             mavri.appendtext_on_page(wiki, archivePage, "\n" + content, archiveSummary, xx)

@@ -99,6 +99,7 @@ while 1:
                         summary = 'Sonuçlandırılan SAS arşivleniyor - ' + summary_ek
                         print(page + " SAS sayfasından kaldırılıyor.")
                         newContent = content.replace("{{Vikipedi:Silinmeye aday sayfalar/" + page + "}}", "")
+                        newContent = re.sub(r"^[ \t]*$\r?\n", "", newContent, flags=re.MULTILINE)
                         mavri.change_page(wiki, title, newContent, summary, xx)
                 else:
                     print(page + ' sabitlenmiş.')
