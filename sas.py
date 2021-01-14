@@ -90,13 +90,13 @@ while 1:
 
                 if hasBeenArchived == False and hasBeenPreArchived == False:
                     append = '\n' + '{{Vikipedi:Silinmeye aday sayfalar/' + page + '}}'
-                    archiveSummary = 'Arşiv sayfalarında bulunmayan SAS alt sayfası arşivlere ekleniyor - ' + summary_ek
+                    archiveSummary = 'Arşiv sayfalarında bulunmayan [[Vikipedi:Silinmeye_aday_sayfalar/' + page + '|SAS alt sayfası]] arşivlere ekleniyor - ' + summary_ek
                     mavri.appendtext_on_page(wiki, archivePage.decode('UTF-8'), append, archiveSummary, xx)
                     print(page + ' arşiv sayfasına eklendi.')
 
                 if pinned == False:
                     if resolved and youngestDiff.total_seconds() >= 3600:
-                        summary = 'Sonuçlandırılan SAS arşivleniyor - ' + summary_ek
+                        summary = '[[Vikipedi:Silinmeye_aday_sayfalar/' + page + '|Sonuçlandırılan SAS]] arşivleniyor - ' + summary_ek
                         print(page + " SAS sayfasından kaldırılıyor.")
                         newContent = content.replace("{{Vikipedi:Silinmeye aday sayfalar/" + page + "}}", "")
                         newContent = re.sub(r"^[ \t]*$\r?\n", "", newContent, flags=re.MULTILINE)
