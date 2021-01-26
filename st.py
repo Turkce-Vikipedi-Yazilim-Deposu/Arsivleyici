@@ -100,7 +100,7 @@ while 1:
                     append = '\n' + \
                         '{{'+title +"/" + page + '}}'
                     archiveSummary = 'Arşiv sayfalarında bulunmayan [['+title +"/" + \
-                        page + '|SAS alt sayfası]] arşivlere ekleniyor - ' + summary_ek
+                        page + '|ŞT alt sayfası]] arşivlere ekleniyor - ' + summary_ek
                     mavri.appendtext_on_page(wiki, archivePage.decode(
                         'UTF-8'), append, archiveSummary, xx)
                     print(page + ' arşiv sayfasına eklendi.')
@@ -108,8 +108,8 @@ while 1:
                 if pinned == False:
                     if resolved and youngestDiff.total_seconds() >= 3600:
                         summary = '[['+title +'/' + page + \
-                            '|Sonuçlandırılan ST]] arşivleniyor - ' + summary_ek
-                        print(page + " ST sayfasından kaldırılıyor.")
+                            '|Sonuçlandırılan ŞT]] arşivleniyor - ' + summary_ek
+                        print(page + " ŞT sayfasından kaldırılıyor.")
                         newContent = content.replace(
                             "{{"+title +'/' + page + "}}", "")
                         newContent = re.sub(
